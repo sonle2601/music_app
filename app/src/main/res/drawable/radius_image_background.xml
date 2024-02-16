@@ -1,0 +1,12 @@
+<!-- rounded_image_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <corners android:radius="30dp" /> <!-- Đặt bán kính theo mong muốn, ví dụ 30dp -->
+
+    <!-- Các thuộc tính khác của shape nếu cần -->
+    <solid android:color="@android:color/transparent" /> <!-- Màu nền trong suốt -->
+    <!-- Hoặc bạn có thể sử dụng solid để đặt màu nền -->
+    <!-- <solid android:color="#FF0000" /> -->
+
+</shape>

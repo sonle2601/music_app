@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.DanhsachbaihatActivity">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <com.google.android.material.floatingactionbutton.FloatingActionButton
+           android:id="@+id/backButton"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:contentDescription="Back Music"
+           android:layout_margin="16dp"
+           app:backgroundTint="@android:color/white"
+           app:fabSize="mini"
+           android:scaleType="fitXY"
+           app:srcCompat="@drawable/back"
+           app:borderWidth="0dp"
+
+           />
+
+
+       <ImageView
+           android:id="@+id/dsimgviewdanhsachcakhuc"
+           android:layout_width="200dp"
+           android:layout_height="200dp"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="50dp"
+           />
+       <TextView
+           android:singleLine="true"
+           android:text="Như phút ban đầu "
+           android:textSize="20dp"
+           android:textStyle="bold"
+           android:textColor="@color/black"
+           android:ellipsize="end"
+           android:maxLines="1"
+           android:id="@+id/txtdstenbai"
+           android:layout_marginLeft="5dp"
+           android:layout_marginTop="15dp"
+           android:layout_below="@id/dsimgviewdanhsachcakhuc"
+           android:layout_centerHorizontal="true"
+
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+
+       <TextView
+           android:singleLine="true"
+           android:text="Phát Nhạc"
+           android:textSize="18dp"
+           android:textColor="@color/xam"
+           android:ellipsize="end"
+           android:maxLines="1"
+           android:id="@+id/txtdstencasi"
+           android:layout_marginLeft="5dp"
+           android:layout_marginTop="5dp"
+           android:layout_below="@id/txtdstenbai"
+           android:layout_centerHorizontal="true"
+
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+
+<!--       <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--           android:layout_width="wrap_content"-->
+<!--           android:layout_height="wrap_content"-->
+<!--           android:layout_below="@id/txtdstencasi"-->
+<!--           android:layout_centerHorizontal="true"-->
+<!--           android:layout_marginTop="16dp"-->
+<!--           app:fabSize="normal"-->
+<!--           android:scaleType="fitXY"-->
+<!--           android:src="@drawable/play"-->
+<!--           android:contentDescription="play music"-->
+<!--           android:id="@+id/floatingplaymusic"-->
+
+<!--           />-->
+       <ImageButton
+           android:layout_marginTop="10dp"
+           android:background="@null"
+           android:scaleType="fitXY"
+           android:src="@drawable/playds"
+           android:layout_below="@id/txtdstencasi"
+           android:layout_centerHorizontal="true"
+           android:id="@+id/buttonPlay"
+           android:layout_width="50dp"
+           android:layout_height="50dp"/>
+
+       <androidx.core.widget.NestedScrollView
+           android:layout_marginTop="50dp"
+           android:layout_below="@id/buttonPlay"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <androidx.recyclerview.widget.RecyclerView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/recyclerdanhsachbaihat"
+
+               >
+
+           </androidx.recyclerview.widget.RecyclerView>
+
+       </androidx.core.widget.NestedScrollView>
+   </RelativeLayout>
+</ScrollView>

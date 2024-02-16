@@ -1,0 +1,52 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearcardview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:orientation="vertical">
+
+        <ImageView
+
+            android:id="@+id/imgalbum"
+            android:scaleType="fitXY"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+        <TextView
+            android:maxWidth="150dp"
+            android:textSize="20dp"
+            android:id="@+id/txtTenalbum"
+            android:textColor="@color/black"
+            android:text="Không phải dạng vừa đâu"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"/>
+
+        <TextView
+            android:maxWidth="150dp"
+            android:id="@+id/txttencasialbum"
+            android:text="Sơn tùng mtp"
+            android:textSize="18dp"
+            android:textColor="@color/xam"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

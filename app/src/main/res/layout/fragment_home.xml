@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Fragment.HomeFragment"
+    android:scrollbars="none"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+        <fragment
+            android:name="com.example.musicapp.Fragment.Fragment_Banner"
+            android:id="@+id/fragmentbanner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </fragment>
+        <fragment
+            android:name="com.example.musicapp.Fragment.Fragment_BXH"
+            android:id="@+id/fragmentbxh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </fragment>
+        <fragment
+            android:name="com.example.musicapp.Fragment.Fragment_Theloai"
+            android:id="@+id/fragmenttheloai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </fragment>
+        <fragment
+            android:name="com.example.musicapp.Fragment.Fragment_Album"
+            android:id="@+id/fragmentalbum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </fragment>
+        <fragment
+            android:name="com.example.musicapp.Fragment.Fragment_Bai_Hot"
+            android:id="@+id/fragmentbaihatlike"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </fragment>
+    </LinearLayout>
+
+</ScrollView>
+

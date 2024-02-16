@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_margin="15dp"
+        android:id="@+id/imgviewbaihot"
+        android:scaleType="fitXY"
+        android:layout_width="60dp"
+        android:layout_height="60dp"/>
+
+    <TextView
+        android:text="Em của ngày hôm qua"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:id="@+id/txttenbaihot"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@id/imgviewbaihot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:singleLine="true"
+        android:text="Sơn tùng mtp"
+        android:textSize="16dp"
+        android:textColor="@color/xam"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:id="@+id/txttencasihot"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/txttenbaihot"
+        android:layout_toRightOf="@id/imgviewbaihot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_marginRight="15dp"
+        android:src="@drawable/iconlove"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/imgluotthich"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+
+        />
+
+</RelativeLayout>

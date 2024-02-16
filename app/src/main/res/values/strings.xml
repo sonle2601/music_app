@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Music</string>
+    <string name="test">Chào mừng mọi người đến với app âm nhạc</string>
+    <string name="titlebxh">BẢNG XẾP HẠNG</string>
+    <string name="titletheloai">THỂ LOẠI</string>
+    <string name="titlealbum">ALBUM</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
